@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Shop Food | HieuPhan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="logo">LoveFarm</div>
+            <div id="menu">
+                <div class="item">
+                    <a href="index.html" class="active">Home</a>
+                </div>
+                <div class="item">
+                    <a href="about.html">About us</a>
+                </div>
+                <div class="item">
+                    <a href="product.html">Product</a>
+                </div>
+                <div class="item">
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <img src="Images/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg" alt="" width="30px">
+                </div>
+                <div class="item">
+                    <img src="Images/shopping-bag.png" alt="" width="30px">
+                </div>
+                <div class="item">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="Images/facebook_3536394.png" alt="Facebook" width="30px">
+                    </a>
+                </div>
+                <div class="item">
+                    <img src="Images/video_12942219.png" alt="" width="30px">
+                </div>
+                <div class="item">
+                    <img src="Images/tiktok_2504942.png" alt="" width="30px">
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="banner-content">
+                <video width="500px" autoplay muted loop>
+                    <source src="Images/Green and Beige Simple Intermittent Fasting Presentation.mp4"
+                        type="video/mp4" />
+                </video>
+                <a href="product.html" class="shop-now-btn">Shop Now</a>
+            </div>
+        </div>
+
+        <!-- Thay thế section sản phẩm bán chạy bằng slider -->
+        <div id="best-sellers" style="padding:40px 0; background:#f9f9f9;">
+            <h2 style="text-align:center; margin-bottom:30px;">Sản phẩm bán chạy</h2>
+            <div class="slider-container" style="position:relative; max-width:900px; margin:auto; overflow:hidden;">
+                <button class="slider-btn prev"
+                    style="position:absolute;left:0;top:50%;transform:translateY(-50%);background:#fff;border:none;font-size:30px;cursor:pointer;z-index:2;">&#8249;</button>
+                <div class="slider-track" style="display:flex; transition:transform 0.5s;">
+                    <div class="product-card"
+                        style="min-width:220px; margin:0 20px; background:#fff; border-radius:8px; box-shadow:0 2px 8px #eee; padding:20px; text-align:center;">
+                        <img src="Images/image.webp" alt="Bánh biscotti"
+                            style="width:180px; height:140px; object-fit:cover; border-radius:6px;">
+                        <div class="name" style="margin:10px 0; font-weight:bold;">Bánh biscotti</div>
+                        <div class="price" style="color:#e74c3c;">113,000đ</div>
+                    </div>
+                    <div class="product-card"
+                        style="min-width:220px; margin:0 20px; background:#fff; border-radius:8px; box-shadow:0 2px 8px #eee; padding:20px; text-align:center;">
+                        <img src="Images/1.png" alt="Khoai lang sấy gừng"
+                            style="width:180px; height:140px; object-fit:cover; border-radius:6px;">
+                        <div class="name" style="margin:10px 0; font-weight:bold;">Khoai lang sấy gừng</div>
+                        <div class="price" style="color:#e74c3c;">57,000đ</div>
+                    </div>
+                    <div class="product-card"
+                        style="min-width:220px; margin:0 20px; background:#fff; border-radius:8px; box-shadow:0 2px 8px #eee; padding:20px; text-align:center;">
+                        <img src="Images/2.png" alt="Bông atiso tươi"
+                            style="width:180px; height:140px; object-fit:cover; border-radius:6px;">
+                        <div class="name" style="margin:10px 0; font-weight:bold;">Bông atiso tươi</div>
+                        <div class="price" style="color:#e74c3c;">400,000đ</div>
+                    </div>
+                    <div class="product-card"
+                        style="min-width:220px; margin:0 20px; background:#fff; border-radius:8px; box-shadow:0 2px 8px #eee; padding:20px; text-align:center;">
+                        <img src="Images/3.png" alt="Hồng treo gió"
+                            style="width:180px; height:140px; object-fit:cover; border-radius:6px;">
+                        <div class="name" style="margin:10px 0; font-weight:bold;">Hồng treo gió</div>
+                        <div class="price" style="color:#e74c3c;">170,000đ</div>
+                    </div>
+                </div>
+                <button class="slider-btn next"
+                    style="position:absolute;right:0;top:50%;transform:translateY(-50%);background:#fff;border:none;font-size:30px;cursor:pointer;z-index:2;">&#8250;</button>
+            </div>
+        </div>
+    </div>
+    <footer class="py-5">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Thông tin chung</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Về chúng tôi</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sản phẩm</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Thông tin hữu ích</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Hướng dẫn thanh toán</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Chính sách chung</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Hồ sơ sản phẩm</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Fanpage</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                            class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                            class="form-control" placeholder="Email address"> <button class="btn btn-primary"
+                            type="button">Subscribe</button> </div>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2025 Company, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

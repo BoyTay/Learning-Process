@@ -1,0 +1,210 @@
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4CAF50;
+    /* float: left; */
+    /* Xóa dòng này */
+    text-transform: uppercase;
+    margin-right: 40px;
+    /* Thêm khoảng cách với menu */
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 16px 40px;
+    /* Thêm padding cho header */
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    /* Để menu chiếm không gian còn lại */
+    justify-content: center;
+    /* Căn giữa menu */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#menu .item {
+    margin: 0 18px;
+    /* Giảm khoảng cách cho cân đối */
+    padding: 0;
+}
+
+#menu .item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.2s;
+}
+
+#menu .item a:hover {
+    color: #4CAF50;
+}
+
+
+#menu .item a.active {
+    color: #4CAF50;
+    border-bottom: 3px solid #4CAF50;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+#actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 18px;
+    /* Khoảng cách giữa các icon */
+}
+
+#actions .item img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: box-shadow 0.2s;
+}
+
+#actions .item img:hover {
+    box-shadow: 0 0 8px #4CAF50;
+}
+
+#banner {
+    width: 100%;
+    margin-top: 24px;
+    display: block;
+    padding: 0;
+    position: relative;
+    background: #f8f8f8;
+    min-height: 380px;
+
+}
+
+.banner-content {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.banner-content video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.banner-content button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 14px 32px;
+    font-size: 1.2rem;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s;
+}
+
+.banner-content button:hover {
+    background: #388e3c;
+}
+
+#wp-products h2 {
+    height: 125px;
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-image: url('Images/Untitled design.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Căn giữa chữ */
+}
+
+#list-products {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    /* Sát trái, không giãn đều */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    /* Khoảng cách giữa các sản phẩm */
+    padding: 0;
+}
+
+#list-products .item {
+    width: 200px;
+    height: 250px;
+    margin: 0;
+    /* Xóa margin trái/phải */
+}
+
+#list-products .item img {
+    display: block;
+    margin: 0px auto;
+    margin-top: px;
+    border-radius: 5px;
+}
+
+
+#list-products .item .name {
+    padding-left: 10px;
+    color: green;
+    font-weight: bold;
+    margin-top: 21px;
+}
+
+#list-products .item .price {
+    padding-left: 10px;
+    color: #f42424;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.shop-now-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 14px 32px;
+    font-size: 1.2rem;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.shop-now-btn:hover {
+    background: #388e3c;
+}
