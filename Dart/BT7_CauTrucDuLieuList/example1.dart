@@ -35,4 +35,29 @@ void main(){
   print('List 3: ${list3.isNotEmpty?'Không rỗng':'Rỗng'}');//Kiểm tra không rỗng
   print(list4.contains(1));//Kiểm tra phần tử có trong List hay không
   print(list4.contains(0));
+  print(list4.indexOf(0));//Vị trí phần tử đầu tiên có giá trị 0
+  print(list4.lastIndexOf(0));//Vị trí phần tử cuối cùng có giá trị 0
+
+  //5. Biến đổi
+  list4 = [2,1,3,9,0,10];
+  print(list4);
+  list4.sort();//Sắp xếp tăng dần
+  print(list4);
+  //list4.sort((a,b)=>b.compareTo(a));//Sắp xếp giảm dần
+  list4.reversed;//Đảo ngược
+  print(list4.reversed);
+
+  list4 = list4.reversed.toList();//Chuyển Iterable thành List
+  print(list4);
+
+  //6. Cắt và nối
+  var subList = list4.sublist(1,4);//Cắt từ vị trí 1 đến 3 (4 không bao gồm)
+  print(subList);
+  var str_joined = list4.join('-');//Nối các phần tử thành chuỗi, ngăn cách bởi '-'
+  print(str_joined);
+
+  //7. Duyệt các phần tử trong List
+  list4.forEach((element){
+    print('Phần tử: $element');
+  });
 }
